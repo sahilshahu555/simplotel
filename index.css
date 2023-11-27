@@ -22,14 +22,20 @@ body {
       margin-left: 28%;
     display: flex;
     align-items: center;
+    
   }
 
   #nav-links a {
     text-decoration: none;
     color: #333;
     margin: 0 15px;
+    font-weight: bold;
   }
-
+  #icons >a> i{
+   
+    color: black;
+  }
+  
   #hamburger {
     display: none;
     flex-direction: column;
@@ -73,22 +79,90 @@ body {
     display: flex;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 950px) {
     #nav-links {
       margin-left: 20%;
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
+    
+    .header>.image{
+        width: 100%;
+        height: 500px;
+        
+    }
+    .header>.image>img{
+        width: 100%; 
+        height: 500px;
+       object-fit: fill;
+    }
+
+    .content>div>h1{
+        font-size: 28px;
+       }
+       .content>div>p{
+        font-size: 17px;
+        width: 100%;
+       }
+
+       .content>div>h1{
+        font-size: 20px;
+       }
+       .content>div>p{
+        font-size: 12px;
+        line-height: 20px;
+       }
+          .cardHolder{
+             
+              width: 100%;
+              height: 100%;
+          }
+          .cardHolder>.card{
+              width: 30%;
+              height: 100%;
+          }
+          
+
     #nav-links {
       margin-left: 15%;
     }
   }
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
+
+    .header>.image{
+        width: 100%;
+        height: 400px;
+        
+    }
+    .header>.image>img{
+        width: 100%; 
+        height: 400px;
+       object-fit: fill;
+    }
+
+    
+   .content>div>h1{
+    font-size: 20px;
+   }
+   .content>div>p{
+    font-size: 12px;
+    line-height: 15px;
+   }
+      .cardHolder{
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+      }
+      .cardHolder>.card{
+          width: 70%;
+          height: 100%;
+          margin: 10px;
+      }
+      
     #nav-links {
       display: none;
 
     }
-
     #hamburger {
       display: flex;
       margin-right: 10px;
@@ -106,44 +180,47 @@ body {
 /*? NAVBAR SECTION END  */
 
 /*? HEADER SECTION  */
+.header{
+    position: relative;
+}
 .image{
     width: 100%;
-    height: 650px;
+    height: 700px;
+    
 }
 img{
     width: 100%; 
-    height: 100%;
+    height: 700px;
     object-fit:cover;
 }
 .content{
     position: absolute;
-    top: 30%;
+    top: 22%;
     left: 5%;
     background-color: rgb(240,104,94,.6);
+    min-width: 250px;
     width: 39%;
     padding: 3%;
-    /* opacity: 60%; */
-    height: 22%;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: left; */
+
 }
 .content h1{
     color: white;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bolder;
     text-align: left;
-    
 
 }
-
 .content p{
-    
     color: white;
     text-align: left;
-
+    width: 78%;
+    line-height: 25px;
+    
 }
 /*? HEADER SECTION END */
 
@@ -154,10 +231,8 @@ img{
     align-items: center;
     flex-direction: column;
     background: linear-gradient(100deg, #d565b2, #eac533);
-    margin-top: -10px;
     gap:20px ;
     padding: 50px;
-    height: 100vh;
 }
 .main> h1{
     color: white;
